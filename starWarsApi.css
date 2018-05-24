@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+
+.dropdown {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 1em;
+}
+
+input {
+    margin-left: 3.75em;
+}

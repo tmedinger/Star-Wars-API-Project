@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Star Wars API Project</title>
+        <link rel="stylesheet" href="starWarsApi.css">
+    </head>
+    <body>
+        <script src="starWarsApi.js"></script>
+            <h1>STAR WARS</h1>
+            <div class="dropdown">
+                <p>Select a Film</p>
+                <select name="filmSelect">
+                    <option value="none"></option>
+                    <option value="thePhantomMenace">The Phantom Menace</option>
+                    <option value="attackOfTheClones">Attack of the Clones</option>
+                    <option value="revengeOfTheSith">Revenge of the Sith</option>
+                    <option value="aNewHope">A New Hope</option>
+                    <option value="theEmpireStrikesBack">The Empire Strikes Back</option>
+                    <option value="returnOfTheJedi">Return of the Jedi</option>
+                    <option value="theForceAwakens">The Force Awakens</option>
+                </select>
+            </div>
+            <form action="">
+                <fieldset>
+                <legend>Select a Subcategory</legend>
+                    <input type="radio" name="subCategory" value="people"> people
+                    <input type="radio" name="subCategory" value="planets"> planets
+                    <input type="radio" name="subCategory" value="species"> species
+                    <input type="radio" name="subCategory" value="vehicles"> vehicles
+                    <input type="radio" name="subCategory" value="starships"> starships
+                </fieldset>
+            </form>
+    </body>
+</html>
