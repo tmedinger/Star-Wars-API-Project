@@ -16,7 +16,7 @@ h1 {
     width: 100%;
 }
 
-form {
+.subCategorySelect {
     margin: auto;
     width: 50%;
     text-align: center;
@@ -25,4 +25,11 @@ form {
 
 input {
     margin-left: 3.75em;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 3px;
+    margin: auto;
+    display: none;
 }

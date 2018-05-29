@@ -11,27 +11,34 @@
         <h1>STAR WARS</h1>
         <div class="dropdown">
             <p>Select a Film</p>
+            <form name="selectForm">
             <select id="filmSelect">
                 <option value="empty"></option>
-                <option value="thePhantomMenace">The Phantom Menace</option>
-                <option value="attackOfTheClones">Attack of the Clones</option>
-                <option value="revengeOfTheSith">Revenge of the Sith</option>
-                <option value="aNewHope">A New Hope</option>
-                <option value="theEmpireStrikesBack">The Empire Strikes Back</option>
-                <option value="returnOfTheJedi">Return of the Jedi</option>
-                <option value="theForceAwakens">The Force Awakens</option>
+                <option value="4">The Phantom Menace</option>
+                <option value="5">Attack of the Clones</option>
+                <option value="6">Revenge of the Sith</option>
+                <option value="1">A New Hope</option>
+                <option value="2">The Empire Strikes Back</option>
+                <option value="3">Return of the Jedi</option>
+                <option value="7/">The Force Awakens</option>
             </select>
+            </form>
         </div>
-        <form action="">
+        <form class="subCategorySelect">
             <fieldset>
             <legend>Select a Subcategory</legend>
-                <input type="radio" name="subCategory" value="people"> People
+                <input type="radio" name="subCategory" value="characters"> Characters
                 <input type="radio" name="subCategory" value="planets"> Planets
                 <input type="radio" name="subCategory" value="species"> Species
                 <input type="radio" name="subCategory" value="vehicles"> Vehicles
                 <input type="radio" name="subCategory" value="starships"> Starships
             </fieldset>
         </form>
+        <div class="resultsBody">
+            <table class="resultsTable">
+              
+            </table>
+        </div>
         <script src="starWarsApi.js"></script>
     </body>
 </html>
