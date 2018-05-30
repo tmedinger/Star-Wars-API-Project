@@ -47,11 +47,13 @@ function displaySubcategory() {
                     resultsTable.appendChild(cell);
                     cell.appendChild(link);
                     link.href = info;
+                    link.target = "_blank";
                     link.textContent = info;
                 }   else {
                     resultsTable.appendChild(cell)
                     cell.appendChild(link);
                     link.href = info;
+                    link.target = "_blank";
                     link.textContent = info;
                 }
             }
