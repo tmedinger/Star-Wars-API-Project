@@ -1,10 +1,9 @@
-const dropdown = document.querySelector (".dropdown");
 const filmSelect = document.querySelector ("select");
 const subCategoryForm = document.querySelector ("fieldset");
 const baseURL = "https://swapi.co/api";
 const subCategoryValue = document.getElementsByName ("subCategory");
 let url;
-
+var filmData;
 
 
 subCategoryForm.style.display = "none";
@@ -16,21 +15,23 @@ function filmChoice (e) {
     e.preventDefault();
     url = baseURL + "/films/" + filmSelect.value;
     fetch(url)
-    .then(function(result) {
-        return result.json();
-    })  .then(function(json) {
-        displaySubcategory(json);
-        console.log(json);
-        return json;
-    });
-}
+    .then(function(response) {
+        filmData = response.json();
+        return filmData;
+    })  .then(function(filmData) {
+        // displaySubcategory(filmData);
+        console.log(filmData);
+        return filmData;
+    }); 
+} 
+
 subCategoryForm.addEventListener("change", displaySubcategory);
 
-function displaySubcategory(json) {
+function displaySubcategory(filmData) {
     for(let v = 0; v < subCategoryValue.length; v ++) {
         if (subCategoryValue[v].checked){
             console.log(subCategoryValue[v].value);
-            console.log(json.characters);
+            console.log(filmData.characters);
             // console.log(json.subCategoryValue[v].value) 
             break;
         } 
