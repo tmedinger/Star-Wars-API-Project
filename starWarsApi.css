@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-image: url("./Assets/stars4.jpg");
+    background-image: url("./Assets/starsMotion2.jpg");
     background-size: cover;
     
 }
@@ -45,9 +45,9 @@ td, tr {
 }
 
 a:link {
-    color: rgb(58, 172, 73);
+    color: white;
 }
 
 a:visited {
-    color: rgb(170, 247, 181);
+    color: rgb(228, 228, 145);
 }
